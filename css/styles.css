@@ -1,0 +1,254 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+html:not(header){
+    background-image: linear-gradient(180deg, #45567d 0%, #2b292c, rgba(133, 93, 93, 0.986) 100%);
+    line-height: 1.4;
+    font-size: large;
+}
+header{
+    padding: 2% 6%;
+    justify-content: right;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 12;
+    top: 0;
+    overflow: hidden;
+    background-color: black;
+    font-weight: bold;
+}
+nav .logo{
+ font-size: 20px;
+ color: #fff;
+ list-style: none;
+ text-decoration: none;
+ 
+}
+nav #toggle-button{
+    position: absolute;
+    top: -100px;
+}
+nav .icon-burguer{
+   position: absolute;
+   right: 5%;
+   top: 50%;
+   transform: translateY(-50%);
+   display: none;
+}
+nav .icon-burguer .line{
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 5px;
+}
+nav ul{
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    align-items: center;
+    
+}
+nav .nav-links li {
+   text-decoration: none;
+
+}
+nav .nav-links{  
+    list-style: none;
+}
+nav ul a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.logo{
+    float: left;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+.navbar, a:hover{
+    color: red;
+    transition: 0.5s;
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+@media screen and (max-width: 780px){
+    nav .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    nav ul{
+        float: none;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        bottom: 100%;
+        top: 100px;
+        font-size: 18px;
+        left: 0;
+        right: 0;
+        width: auto;    
+        height: auto;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+        justify-content: space-evenly;
+    }
+    nav .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    nav .nav-links a{
+        font-size: 20px;
+    }
+    nav .ul a{
+        font-size: 20px;
+    }
+    nav .icon-burguer{
+        display: block;
+    }
+    nav :checked ~ ul {
+        bottom: 0;
+    }
+    nav :checked ~ .icon-burguer .line:nth-child(1){
+        transform: translateY(10px) rotate(225deg); 
+    }
+    nav :checked ~ .icon-burguer .line:nth-child(3){
+        transform: translateY(-10px) rotate(-225deg);
+}
+    nav :checked ~ .icon-burguer .line:nth-child(2){
+        opacity: 0;
+}
+
+}
+#welcome-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    flex-direction: column;
+    font-size: 25px;
+    width: 100%;
+}
+
+section{
+    display: block;
+}
+.section-title{
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-top: 0.2rem solid yellow;
+}
+h2{
+    font-size: 2rem;
+}
+#projects{
+    text-align: center;
+    padding: 10rem 2rem;
+}
+.project-image{
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+}
+.grid-lay{
+  display: grid;
+  grid-gap: 4rem;
+  margin-bottom: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+}
+
+.contact-text{
+    text-align: center;
+    margin: 0 auto 6rem auto;
+    border-top: 0.2rem solid yellow;
+    max-width: 640px;
+    font-size: 1.5rem;
+}
+ .contact-icons{
+   text-align: center;
+   justify-items: center;
+   height: 100px;
+}
+i{
+    display: block;
+   padding: 1rem;
+}
+@media screen and (max-width: 780px){
+    .project-image{
+        width: 50%;
+    }
+    h1, h2, p{
+        align-items: center;
+    }
+}
+
+.text-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+    position: relative;
+    bottom: 0;
+    justify-content: space-around;
+}
+.basic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    top: 3rem;
+    justify-content: space-around;
+
+}
+.photo{
+    align-items: center;
+    justify-content: space-around;
+}
+.eu{
+    border-radius: 55%;
+    position: relative;
+    top: 6rem;
+    width: 350px;
+    bottom: 0;
+    justify-content: space-around;
+    left: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
