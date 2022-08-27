@@ -98,6 +98,7 @@ a{
         width: auto;
         justify-content: center;
         text-align: center;
+        color: aliceblue;
     }
     nav ul{
         float: none;
