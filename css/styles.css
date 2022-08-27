@@ -92,7 +92,7 @@ a{
     color: white;
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 780px){  /* nav bar*/
     nav .logo{
         float: none;
         width: auto;
@@ -203,6 +203,7 @@ i{
     }
     h1, h2, p{
         align-items: center;
+        text-align: center;
     }
 }
 
@@ -238,8 +239,6 @@ i{
     justify-content: space-around;
     left: 3rem;
 }
-
-
 
 
 
